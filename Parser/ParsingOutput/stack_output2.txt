@@ -1,0 +1,446 @@
+Stack : <START_PROGRAM>$
+Production rule is : <START_PROGRAM>=<FUNCTION_LIST><MAIN>
+Stack after production rule : <FUNCTION_LIST><MAIN>$
+Input top is : [FUN]
+
+Stack : <FUNCTION_LIST><MAIN>$
+Production rule is : <FUNCTION_LIST>=#
+Stack after production rule : <MAIN>$
+Input top is : [FUN]
+
+Stack : <MAIN>$
+Production rule is : <MAIN>=[FUN][IDENTIFIER][OP_PAR][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]
+Stack after production rule : [FUN][IDENTIFIER][OP_PAR][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [FUN]
+
+Matched [FUN]
+
+Matched [IDENTIFIER]
+
+Matched [OP_PAR]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<DECL>[COL]
+Stack after production rule : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DECL>=<DATATYPE>[IDENTIFIER]
+Stack after production rule : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DATATYPE>=[INT]
+Stack after production rule : [INT][IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Matched [INT]
+
+Matched [IDENTIFIER]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<DECL>[COL]
+Stack after production rule : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DECL>=<DATATYPE>[IDENTIFIER]
+Stack after production rule : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DATATYPE>=[INT]
+Stack after production rule : [INT][IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Matched [INT]
+
+Matched [IDENTIFIER]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<FUNC_CALL>[COL]
+Stack after production rule : <FUNC_CALL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Stack : <FUNC_CALL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FUNC_CALL>=[SCAN][OP_PAR][IDENTIFIER][CL_PAR]
+Stack after production rule : [SCAN][OP_PAR][IDENTIFIER][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Matched [SCAN]
+
+Matched [OP_PAR]
+
+Matched [IDENTIFIER]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<FUNC_CALL>[COL]
+Stack after production rule : <FUNC_CALL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Stack : <FUNC_CALL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FUNC_CALL>=[SCAN][OP_PAR][IDENTIFIER][CL_PAR]
+Stack after production rule : [SCAN][OP_PAR][IDENTIFIER][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [SCAN]
+
+Matched [SCAN]
+
+Matched [OP_PAR]
+
+Matched [IDENTIFIER]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<ASSIGNMENT>[COL]
+Stack after production rule : <ASSIGNMENT>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <ASSIGNMENT>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <ASSIGNMENT>=[IDENTIFIER][ASSIGN_OP]<EXPRESSIONS>
+Stack after production rule : [IDENTIFIER][ASSIGN_OP]<EXPRESSIONS>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Matched [ASSIGN_OP]
+
+Stack : <EXPRESSIONS>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS>=<TERM><EXPRESSIONS*>
+Stack after production rule : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=<VALUE>
+Stack after production rule : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <VALUE>=[INT_LIT]
+Stack after production rule : [INT_LIT]<TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Matched [INT_LIT]
+
+Stack : <TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Stack : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=#
+Stack after production rule : [COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [LOOP]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<NEST_BLOCK>[COL]
+Stack after production rule : <NEST_BLOCK>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [LOOP]
+
+Stack : <NEST_BLOCK>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <NEST_BLOCK>=[LOOP][OP_PAR]<BOOL_STMT>[CL_PAR][COL]<STMT_LIST>[ENDLOOP]
+Stack after production rule : [LOOP][OP_PAR]<BOOL_STMT>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [LOOP]
+
+Matched [LOOP]
+
+Matched [OP_PAR]
+
+Stack : <BOOL_STMT>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <BOOL_STMT>=<EXPRESSIONS><BOOL_STMT*>
+Stack after production rule : <EXPRESSIONS><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <EXPRESSIONS><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS>=<TERM><EXPRESSIONS*>
+Stack after production rule : <TERM><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <TERM><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=[IDENTIFIER]
+Stack after production rule : [IDENTIFIER]<TERM*><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Stack : <TERM*><EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [LE]
+
+Stack : <EXPRESSIONS*><BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=#
+Stack after production rule : <BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [LE]
+
+Stack : <BOOL_STMT*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <BOOL_STMT*>=[LE]<EXPRESSIONS>
+Stack after production rule : [LE]<EXPRESSIONS>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [LE]
+
+Matched [LE]
+
+Stack : <EXPRESSIONS>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS>=<TERM><EXPRESSIONS*>
+Stack after production rule : <TERM><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <TERM><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=[IDENTIFIER]
+Stack after production rule : [IDENTIFIER]<TERM*><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Stack : <TERM*><EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [CL_PAR]
+
+Stack : <EXPRESSIONS*>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=#
+Stack after production rule : [CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [CL_PAR]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <STMT><STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<ASSIGNMENT>[COL]
+Stack after production rule : <ASSIGNMENT>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <ASSIGNMENT>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <ASSIGNMENT>=[IDENTIFIER][ASSIGN_OP]<EXPRESSIONS>
+Stack after production rule : [IDENTIFIER][ASSIGN_OP]<EXPRESSIONS>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Matched [ASSIGN_OP]
+
+Stack : <EXPRESSIONS>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS>=<TERM><EXPRESSIONS*>
+Stack after production rule : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=[IDENTIFIER]
+Stack after production rule : [IDENTIFIER]<TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Stack : <TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [ADDITION_OP]
+
+Stack : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=[ADDITION_OP]<TERM><EXPRESSIONS*>
+Stack after production rule : [ADDITION_OP]<TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [ADDITION_OP]
+
+Matched [ADDITION_OP]
+
+Stack : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=<VALUE>
+Stack after production rule : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <VALUE>=[INT_LIT]
+Stack after production rule : [INT_LIT]<TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Matched [INT_LIT]
+
+Stack : <TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Stack : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=#
+Stack after production rule : [COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [PRINT]
+
+Stack : <STMT><STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<FUNC_CALL>[COL]
+Stack after production rule : <FUNC_CALL>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [PRINT]
+
+Stack : <FUNC_CALL>[COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FUNC_CALL>=[PRINT][OP_PAR]<PRINT_STMT>[CL_PAR]
+Stack after production rule : [PRINT][OP_PAR]<PRINT_STMT>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [PRINT]
+
+Matched [PRINT]
+
+Matched [OP_PAR]
+
+Stack : <PRINT_STMT>[CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <PRINT_STMT>=[IDENTIFIER]
+Stack after production rule : [IDENTIFIER][CL_PAR][COL]<STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [IDENTIFIER]
+
+Matched [IDENTIFIER]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=#
+Stack after production rule : [ENDLOOP][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [ENDLOOP]
+
+Matched [ENDLOOP]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [RET]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<RETURN>[COL]
+Stack after production rule : <RETURN>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [RET]
+
+Stack : <RETURN>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <RETURN>=[RET]<EXPRESSIONS>
+Stack after production rule : [RET]<EXPRESSIONS>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [RET]
+
+Matched [RET]
+
+Stack : <EXPRESSIONS>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS>=<TERM><EXPRESSIONS*>
+Stack after production rule : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <TERM><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM>=<FACTOR><TERM*>
+Stack after production rule : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <FACTOR><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <FACTOR>=<VALUE>
+Stack after production rule : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Stack : <VALUE><TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <VALUE>=[INT_LIT]
+Stack after production rule : [INT_LIT]<TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT_LIT]
+
+Matched [INT_LIT]
+
+Stack : <TERM*><EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <TERM*>=#
+Stack after production rule : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Stack : <EXPRESSIONS*>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <EXPRESSIONS*>=#
+Stack after production rule : [COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [COL]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=#
+Stack after production rule : [ENDFUN][COL]$
+Input top is : [ENDFUN]
+
+Matched [ENDFUN]
+
+Matched [COL]
+
+PARSED

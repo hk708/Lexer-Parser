@@ -1,0 +1,89 @@
+Stack : <START_PROGRAM>$
+Production rule is : <START_PROGRAM>=<FUNCTION_LIST><MAIN>
+Stack after production rule : <FUNCTION_LIST><MAIN>$
+Input top is : [FUN]
+
+Stack : <FUNCTION_LIST><MAIN>$
+Production rule is : <FUNCTION_LIST>=#
+Stack after production rule : <MAIN>$
+Input top is : [FUN]
+
+Stack : <MAIN>$
+Production rule is : <MAIN>=[FUN][IDENTIFIER][OP_PAR][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]
+Stack after production rule : [FUN][IDENTIFIER][OP_PAR][CL_PAR][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [FUN]
+
+Matched [FUN]
+
+Matched [IDENTIFIER]
+
+Matched [OP_PAR]
+
+Matched [CL_PAR]
+
+Matched [COL]
+
+SKIP
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<DECL>[COL]
+Stack after production rule : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DECL>=<DATATYPE>[IDENTIFIER]
+Stack after production rule : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DATATYPE>=[INT]
+Stack after production rule : [INT][IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Matched [INT]
+
+Matched [IDENTIFIER]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=<STMT><STMT_LIST>
+Stack after production rule : <STMT><STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <STMT><STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT>=<DECL>[COL]
+Stack after production rule : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DECL>[COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DECL>=<DATATYPE>[IDENTIFIER]
+Stack after production rule : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Stack : <DATATYPE>[IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Production rule is : <DATATYPE>=[INT]
+Stack after production rule : [INT][IDENTIFIER][COL]<STMT_LIST>[ENDFUN][COL]$
+Input top is : [INT]
+
+Matched [INT]
+
+Matched [IDENTIFIER]
+
+Matched [COL]
+
+Stack : <STMT_LIST>[ENDFUN][COL]$
+Production rule is : <STMT_LIST>=#
+Stack after production rule : [ENDFUN][COL]$
+Input top is : [ENDFUN]
+
+Matched [ENDFUN]
+
+Matched [COL]
+
+ERROR AT Line no. 2

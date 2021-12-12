@@ -1,0 +1,302 @@
+Parent :<START_PROGRAM>
+Child :<FUNCTION_LIST>
+Child :<MAIN>
+
+Parent :<FUNCTION_LIST>
+Child :<FUNCTION>
+Child :<FUNCTION_LIST>
+
+Parent :<FUNCTION>
+Child :<DATATYPE>
+Child :[FUN]
+Child :[IDENTIFIER]
+Child :[OP_PAR]
+Child :<PARAM_LIST>
+Child :[CL_PAR]
+Child :[COL]
+Child :<STMT_LIST>
+Child :[ENDFUN]
+Child :[COL]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<PARAM_LIST>
+Child :<PARAM>
+Child :<PARAM_LIST>
+
+Parent :<PARAM>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<PARAM_LIST>
+Child :[COM]
+Child :<PARAM>
+Child :<PARAM_LIST>
+
+Parent :<PARAM>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<PARAM_LIST>
+Child :NULL
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<ASSIGNMENT>
+Child :[COL]
+
+Parent :<ASSIGNMENT>
+Child :[IDENTIFIER]
+Child :[ASSIGN_OP]
+Child :<EXPRESSIONS>
+
+Parent :<EXPRESSIONS>
+Child :<TERM>
+Child :<EXPRESSIONS*>
+
+Parent :<TERM>
+Child :<FACTOR>
+Child :<TERM*>
+
+Parent :<FACTOR>
+Child :[IDENTIFIER]
+
+Parent :<TERM*>
+Child :NULL
+
+Parent :<EXPRESSIONS*>
+Child :[ADDITION_OP]
+Child :<TERM>
+Child :<EXPRESSIONS*>
+
+Parent :<TERM>
+Child :<FACTOR>
+Child :<TERM*>
+
+Parent :<FACTOR>
+Child :[IDENTIFIER]
+
+Parent :<TERM*>
+Child :NULL
+
+Parent :<EXPRESSIONS*>
+Child :NULL
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<FUNC_CALL>
+Child :[COL]
+
+Parent :<FUNC_CALL>
+Child :[PRINT]
+Child :[OP_PAR]
+Child :<PRINT_STMT>
+Child :[CL_PAR]
+
+Parent :<PRINT_STMT>
+Child :[IDENTIFIER]
+
+Parent :<STMT_LIST>
+Child :NULL
+
+Parent :<FUNCTION_LIST>
+Child :NULL
+
+Parent :<MAIN>
+Child :[FUN]
+Child :[IDENTIFIER]
+Child :[OP_PAR]
+Child :[CL_PAR]
+Child :[COL]
+Child :<STMT_LIST>
+Child :[ENDFUN]
+Child :[COL]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<FUNC_CALL>
+Child :[COL]
+
+Parent :<FUNC_CALL>
+Child :[SCAN]
+Child :[OP_PAR]
+Child :[IDENTIFIER]
+Child :[CL_PAR]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<FUNC_CALL>
+Child :[COL]
+
+Parent :<FUNC_CALL>
+Child :[SCAN]
+Child :[OP_PAR]
+Child :[IDENTIFIER]
+Child :[CL_PAR]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<ASSIGNMENT>
+Child :[COL]
+
+Parent :<ASSIGNMENT>
+Child :[IDENTIFIER]
+Child :[ASSIGN_OP]
+Child :<EXPRESSIONS>
+
+Parent :<EXPRESSIONS>
+Child :<TERM>
+Child :<EXPRESSIONS*>
+
+Parent :<TERM>
+Child :<FACTOR>
+Child :<TERM*>
+
+Parent :<FACTOR>
+Child :<VALUE>
+
+Parent :<VALUE>
+Child :[INT_LIT]
+
+Parent :<TERM*>
+Child :NULL
+
+Parent :<EXPRESSIONS*>
+Child :NULL
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<FUNC_CALL>
+Child :[COL]
+
+Parent :<FUNC_CALL>
+Child :[FUN]
+Child :[IDENTIFIER]
+Child :[OP_PAR]
+Child :<ARG_LIST>
+Child :[CL_PAR]
+
+Parent :<ARG_LIST>
+Child :<ARG>
+Child :<ARG_LIST>
+
+Parent :<ARG>
+Child :[IDENTIFIER]
+
+Parent :<ARG_LIST>
+Child :[COM]
+Child :<ARG>
+Child :<ARG_LIST>
+
+Parent :<ARG>
+Child :[IDENTIFIER]
+
+Parent :<ARG_LIST>
+Child :NULL
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<RETURN>
+Child :[COL]
+
+Parent :<RETURN>
+Child :[RET]
+Child :<EXPRESSIONS>
+
+Parent :<EXPRESSIONS>
+Child :<TERM>
+Child :<EXPRESSIONS*>
+
+Parent :<TERM>
+Child :<FACTOR>
+Child :<TERM*>
+
+Parent :<FACTOR>
+Child :<VALUE>
+
+Parent :<VALUE>
+Child :[INT_LIT]
+
+Parent :<TERM*>
+Child :NULL
+
+Parent :<EXPRESSIONS*>
+Child :NULL
+
+Parent :<STMT_LIST>
+Child :NULL
+
+PARSED

@@ -1,0 +1,53 @@
+Parent :<START_PROGRAM>
+Child :<FUNCTION_LIST>
+Child :<MAIN>
+
+Parent :<FUNCTION_LIST>
+Child :NULL
+
+Parent :<MAIN>
+Child :[FUN]
+Child :[IDENTIFIER]
+Child :[OP_PAR]
+Child :[CL_PAR]
+Child :[COL]
+Child :<STMT_LIST>
+Child :[ENDFUN]
+Child :[COL]
+
+SKIP
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :NULL
+
+ERROR AT Line no. 2

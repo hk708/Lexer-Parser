@@ -1,0 +1,74 @@
+Parent :<START_PROGRAM>
+Child :<FUNCTION_LIST>
+Child :<MAIN>
+
+Parent :<FUNCTION_LIST>
+Child :NULL
+
+Parent :<MAIN>
+Child :[FUN]
+Child :[IDENTIFIER]
+Child :[OP_PAR]
+Child :[CL_PAR]
+Child :[COL]
+Child :<STMT_LIST>
+Child :[ENDFUN]
+Child :[COL]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<DECL>
+Child :[COL]
+
+Parent :<DECL>
+Child :<DATATYPE>
+Child :[IDENTIFIER]
+
+Parent :<DATATYPE>
+Child :[INT]
+
+Parent :<STMT_LIST>
+Child :<STMT>
+Child :<STMT_LIST>
+
+Parent :<STMT>
+Child :<ASSIGNMENT>
+Child :[COL]
+
+Parent :<ASSIGNMENT>
+Child :[IDENTIFIER]
+Child :[ASSIGN_OP]
+Child :<EXPRESSIONS>
+
+SYNCH
+
+TERMINAL ERROR, TRIED TO MATCH [CL_PAR] WITH [COL]
+
+TERMINAL ERROR, TRIED TO MATCH [IDENTIFIER] WITH [COL]
+
+TERMINAL ERROR, TRIED TO MATCH [ADDITION_OP] WITH [COL]
+
+TERMINAL ERROR, TRIED TO MATCH [IDENTIFIER] WITH [COL]
+
+Parent :<STMT_LIST>
+Child :NULL
+
+ERROR AT Line no. 4
