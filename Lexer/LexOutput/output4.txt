@@ -1,0 +1,14 @@
+Lexeme : fun ; Token :[FUN]; Line no. 1
+Lexeme : main ; Token :[IDENTIFIER]; Line no. 1
+Lexeme : ( ; Token :[OP_PAR]; Line no. 1
+Lexeme : ) ; Token :[CL_PAR]; Line no. 1
+Lexeme : : ; Token :[COL]; Line no. 1
+Lexeme : ( ; Token :[OP_PAR]; Line no. 2
+Lexeme : int ; Token :[INT]; Line no. 2
+Lexeme : a ; Token :[IDENTIFIER]; Line no. 2
+Lexeme : : ; Token :[COL]; Line no. 2
+Lexeme : int ; Token :[INT]; Line no. 3
+Lexeme : b ; Token :[IDENTIFIER]; Line no. 3
+Lexeme : : ; Token :[COL]; Line no. 3
+Lexeme : endfun ; Token :[ENDFUN]; Line no. 4
+Lexeme : : ; Token :[COL]; Line no. 4
